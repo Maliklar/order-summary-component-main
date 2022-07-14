@@ -16,7 +16,165 @@ html {
     font-size: 16px;
 }
 
+button {
+    cursor: pointer;
+}
+
 body {
     padding: 0px;
     margin: 0px;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: var(--Paleblue);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 446px;
+    height: 692px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+p,
+h1,
+h2 {
+    margin: 0px;
+}
+
+h1 {
+    color: var(--Darkblue);
+    font-size: 1.75rem;
+    font-weight: 900;
+    word-spacing: 0.02rem;
+}
+
+h2 {
+    font-size: 1.0rem;
+    font-weight: 900;
+}
+
+p {
+    color: var(--Desaturatedblue);
+    line-height: 1.7rem;
+    margin-bottom: 4px;
+}
+
+a {
+    color: var(--Darkblue);
+    justify-self: self-end;
+    font-size: 0.9rem;
+    margin-left: auto;
+}
+
+.card-body {
+    margin: 44px 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+}
+
+.price-box {
+    display: flex;
+    align-items: center;
+    background-color: var(--Verypaleblue);
+    width: 100%;
+    padding: 24px 24px;
+    gap: 18px;
+    border-radius: 15px;
+}
+
+.price-summary>p {
+    margin: 0px;
+}
+
+.price-summary>h2 {
+    margin-bottom: 3px;
+}
+
+.proceed {
+    width: 100%;
+    background-color: var(--Brightblue);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 14px 0px;
+    margin-top: 20px;
+    font-size: 1.0rem;
+    box-shadow: 0px 16px 20px rgba(180, 179, 250, 0.61);
+}
+
+.proceed:hover {
+    background-color: rgb(103, 103, 146);
+}
+
+a:hover {
+    color: rgb(103, 103, 146);
+}
+
+.cancel:hover {
+    color: black;
+}
+
+.cancel {
+    margin-top: 17px;
+    background-color: transparent;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--Desaturatedblue);
+}
+
+@media screen and (max-width: 500px) {
+    .card {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 86%;
+        height: 79vh;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+    .card-header {
+        height: 29%;
+    }
+    .card-body {
+        margin: 26px 48px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 14px;
+    }
+    h1 {
+        color: var(--Darkblue);
+        font-size: 1.38rem;
+    }
+    p {
+        color: var(--Desaturatedblue);
+        line-height: 1.4rem;
+        margin-bottom: 4px;
+    }
+    .price-box {
+        display: flex;
+        align-items: center;
+        background-color: var(--Verypaleblue);
+        width: 100%;
+        padding: 7px 24px;
+        gap: 18px;
+        border-radius: 15px;
+    }
 }
